@@ -26,7 +26,6 @@ func (w *Wallet) Deposit(amount Bitcoin) {
 }
 
 func (w *Wallet) Balance() Bitcoin {
-	fmt.Printf("address of balance in test is %p \n", &w.balance)
 	return w.balance
 }
 

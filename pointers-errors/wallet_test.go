@@ -1,7 +1,6 @@
 package pointerserrors
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -12,8 +11,9 @@ func TestWallet(t *testing.T) {
 	wallet.Deposit(Bitcoin(10))
 
 	got := wallet.Balance()
+
 	// %p placeholder print memory address
-	fmt.Printf("address of balance in test is %p \n", &wallet.balance)
+	// fmt.Printf("address of balance in test is %p \n", &wallet.balance)
 
 	want := Bitcoin(10)
 
